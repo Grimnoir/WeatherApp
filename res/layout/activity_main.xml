@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/etlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter Location" />
+
+    <EditText
+        android:id="@+id/etcountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etlocation"
+        android:ems="10"
+        android:hint="Country" />
+
+    <EditText
+        android:id="@+id/ettemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etcountry"
+        android:layout_below="@+id/etcountry"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Temperature" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ethumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ettemp"
+        android:layout_below="@+id/ettemp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Humidity" />
+
+    <EditText
+        android:id="@+id/etpressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ethumidity"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Pressure" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etpressure"
+        android:layout_below="@+id/etpressure"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="40dp"
+        android:text="GO" />
+
+</RelativeLayout>
